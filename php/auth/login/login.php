@@ -11,16 +11,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
         if ($user && password_verify($password, $user['password'])) {
-            echo "تم تسجيل الدخول بنجاح! جاري التوجيه...";
+            echo "Login successful! Redirecting...";
             header("Refresh: 2; url=/fitness_app/php/dashpord/dashpord.php");
             exit;
         } else {
-            echo "الإيميل أو كلمة المرور غير صحيحة.";
+            echo "Incorrect email or password.";
         }
     } catch (PDOException $e) {
-        echo "خطأ في قاعدة البيانات: " . $e->getMessage();
+        echo "Database error: " . $e->getMessage();
     }
 } else {
-    echo "لم يتم إرسال بيانات من الفورم!";
+    echo "No data submitted from the form!";
 }
 ?>
