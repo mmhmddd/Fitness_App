@@ -1,0 +1,33 @@
+body {
+    background-color: #F8FAFC;
+    font-family: Arial, sans-serif;
+}
+
+.btn-primary {
+    background-color: #60A5FA;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+}
+.btn-primary:hover {
+    background-color: #3B82F6;
+}
+
+.btn-outline-primary {
+    border-color: #60A5FA;
+    color: #60A5FA;
+    border-radius: 8px;
+    padding: 12px 24px;
+}
+.btn-outline-primary:hover {
+    background-color: #60A5FA;
+    color: white;
+}
+
+h1.display-4 {
+    color: #1F2937;
+}
+
+p.lead {
+    color: #4B5563;
+}
