@@ -1,39 +1,63 @@
-body {
-    background-color: #F8FAFC;
-    font-family: Arial, sans-serif;
+body{
+    background-color: white;
 }
 
-.card {
+.register-page .card {
     border: none;
     border-radius: 15px;
+    background-color: #fff;
 }
 
-.form-control {
-    background-color: #E0F2FE;
-    border: 1px solid #60A5FA;
+.register-page .form-control {
+    background-color: #f8fafc;
+    border: 1px solid #60a5fa;
     border-radius: 8px;
+    padding: 10px;
+    transition: all 0.3s ease;
 }
 
-.form-control:focus {
+.register-page .form-control:focus {
     box-shadow: 0 0 5px rgba(96, 165, 250, 0.5);
-    border-color: #60A5FA;
+    border-color: #60a5fa;
+    background-color: #fff;
 }
 
-.btn-primary {
-    background-color: #60A5FA;
+.register-page .input-group-text {
+    background-color: #f8fafc;
+    border: 1px solid #60a5fa;
+    border-radius: 8px 0 0 8px;
+    color: #007bff;
+}
+
+.register-page .btn-primary {
+    background-color: #60a5fa;
     border: none;
     border-radius: 8px;
     padding: 12px 24px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
-.btn-primary:hover {
-    background-color: #3B82F6;
+.register-page .btn-primary:hover {
+    background-color: #3b82f6;
 }
 
-h1.display-4 {
-    color: #1F2937;
+.register-page .text-primary {
+    color: #007bff !important;
 }
 
-p.lead {
-    color: #4B5563;
+.register-page .text-primary:hover {
+    color: #0056b3 !important;
+}
+
+.register-page .spinner-border {
+    width: 3rem;
+    height: 3rem;
+    border-width: 0.4em;
+}
+
+.register-page #loader p {
+    color: #007bff;
+    font-weight: bold;
+    font-size: 1.1rem;
 }
